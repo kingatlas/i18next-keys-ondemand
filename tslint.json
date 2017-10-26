@@ -1,0 +1,12 @@
+{
+    "extends": ["tslint:latest"],
+    "rules": {
+      "no-reference": false,
+      "quotemark":[true, "single"],
+      "trailing-comma": false,
+      "interface-name": false,
+      "arrow-parens": false,
+      "member-access": false,
+      "no-trailing-whitespace": [true, "ignore-comments", "ignore-blank-lines"]
+    }
+  }

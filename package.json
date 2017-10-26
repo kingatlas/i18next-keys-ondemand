@@ -1,0 +1,58 @@
+{
+  "name": "i18next-keys-ondemand",
+  "version": "0.1.0",
+  "description": "i18next plugin to request the non-translated keys when used",
+  "main": "dist/index.js",
+  "repository": "https://github.com/kingatlas/i18next-keys-ondemand.git",
+  "author": "Nabil Koroghli",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "yarn build",
+    "test": "jest --watch",
+    "build": "gulp"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/jest": "^21.1.4",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-tslint": "^8.1.2",
+    "gulp-typescript": "^3.2.2",
+    "i18next": "^10.0.3",
+    "jest": "^21.2.1",
+    "merge2": "^1.2.0",
+    "ts-jest": "^21.1.3",
+    "tslint": "^5.8.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "debounce": "^1.0.2"
+  },
+  "peerDependencies": {
+    "i18next": "10.x.x"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./tests/setup.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/config/typescriptTransform.js"
+    },
+    "testMatch": [
+      "**/?(*.)(spec|test).ts?(x)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.test.json"
+      }
+    }
+  }
+}

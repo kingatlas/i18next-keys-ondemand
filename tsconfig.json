@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "module": "commonjs",
+      "declaration": true,
+      "target": "es5",
+      "jsx": "react",
+      "lib": ["es6", "dom"],
+      "sourceMap": true,
+      "allowJs": false,
+      "moduleResolution": "node",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": false,
+      "strictNullChecks": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true
+    },
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }
+  
