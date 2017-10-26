@@ -8,8 +8,8 @@
   "author": "Nabil Koroghli",
   "license": "MIT",
   "scripts": {
-    "prepublish": "yarn build",
-    "test": "jest --watch",
+    "prepublish": "yarn build && yarn test",
+    "test": "jest",
     "build": "gulp"
   },
   "files": [
