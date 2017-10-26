@@ -22,7 +22,7 @@ $ yarn add i18next-keys-ondemand
 
 ```TypeScript
 import * as i18n from 'i18next';
-import { I18nextKeysOnDemand } from 'i18next-keys-ondemand';
+import { I18nextKeysOnDemand, TranslationMap } from 'i18next-keys-ondemand';
 
 
 
