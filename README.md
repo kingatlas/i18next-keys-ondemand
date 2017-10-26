@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/react-i18next-ondemand.svg)](https://www.npmjs.com/package/react-i18next-ondemand)
+[![npm version](https://badge.fury.io/js/i18next-keys-ondemand.svg)](https://www.npmjs.com/package/i18next-keys-ondemand)
 
 # I18next with ability to download missing keys 
 
