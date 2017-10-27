@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "baseUrl": "./",
+      "baseUrl": "./src",
       "module": "commonjs",
       "declaration": true,
       "target": "es5",
@@ -19,7 +19,7 @@
     },
     "exclude": [
       "node_modules",
-      "dist"
+      "dist",
+      "tests"
     ]
-  }
-  
+}

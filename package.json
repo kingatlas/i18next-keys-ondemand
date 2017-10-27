@@ -1,6 +1,6 @@
 {
   "name": "i18next-keys-ondemand",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "i18next plugin to request the non-translated keys when used",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
