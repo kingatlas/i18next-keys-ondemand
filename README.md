@@ -39,10 +39,19 @@ function translationService(keys: string[]) {
 }
 
 i18n
-  .use(new I18nextKeysOnDemand({ translationsGetter: translationService })) // init i18next here
+  .use(new I18nextKeysOnDemand({ translationGetter: translationService })) // init i18next here
   .init({
     fallbackLng: 'en',
     ns: ['thenamespace'],
     defaultNS: 'thenamespace'
   });
 ```
+
+- The options:
+
+| Field  | Mandatory? | Default value | Comment |
+| ------ | ------ | ------ | ------ |
+| `translationGetter` | yes |  | Translation service to use |
+| `missingKeyValue` | no | '' | Value to return for missing keys |
+| `debounceDelay` | no | 100 | Delay in ms used to debounce the translation requests |
+
