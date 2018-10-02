@@ -41,6 +41,7 @@ function translationService(keys: string[]) {
 i18n
   .use(new I18nextKeysOnDemand({ translationGetter: translationService })) // init i18next here
   .init({
+    saveMissing: true,
     fallbackLng: 'en',
     ns: ['thenamespace'],
     defaultNS: 'thenamespace'
